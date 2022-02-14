@@ -1,0 +1,318 @@
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: "Helvetica", sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    color: 	#404040;
+}
+
+.container-left {
+    width: 60%;
+    display: block;
+}
+
+.container-right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/* Header */
+
+header {
+    height: 4rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 1;
+    background-color: white;
+}
+
+header div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+header img {
+    flex-grow: 1;
+    align-items: center;
+    height: 2rem
+}
+
+header span {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.word1 {
+    font-weight: 600;
+}
+
+.word2 {
+    font-weight: 100;
+}
+
+nav {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+    display: inline-flex;
+    padding-left: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: 	#404040;
+}
+/* Main Section */
+
+main {
+    position: relative;
+    top: 4rem;
+}
+
+.bannersection {
+    background-color: lightgray;
+    display: flex;
+}
+
+.bannersection .container-right {
+    margin-right: 8%;
+    margin-left: 1%;
+}
+
+.bannerimg {
+    padding: 2rem 1.5rem;
+    width: 60%;
+}
+
+button {
+    border: none;
+    border-radius: 2px;
+    height: 3.5rem;
+    padding: 8px 0 8px 0;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #404040;
+    color: white;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    font-weight: bolder;
+}
+
+.bannersection .container-right h2 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Information Section */
+
+.information {
+    display: flex;
+    flex-direction: row;
+    background-color: whitesmoke;
+    color: 	#404040;
+}
+
+.information .container-left img {
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
+.infomain {
+    padding: 2rem 1.5rem;
+}
+
+.information h1 {
+    font-size: 2.5rem;
+}
+
+.information .container-right {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.information .container-right img {
+    width: 35%;
+    height: auto;
+}
+
+.description {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1rem;
+    padding-top: 2rem;
+}
+
+.article {
+    padding: 1rem;
+    border: 2px solid lightgrey;
+    display: inline-flex;
+}
+
+.grey {
+    background-color: lightgrey;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+.description p {
+    padding-top: 1rem;
+}
+
+.description a {
+    color: blue;
+}
+
+.information p {
+    line-height: 22px;
+    padding-bottom: 1rem;
+}
+
+.credit {
+    padding-bottom: 2rem;
+}
+
+/* Courses Section */
+.learningsection {
+    padding: 2rem 3.5rem;
+    background: lightgray;
+}
+
+.learningsection h1 {
+    text-align: center;
+}
+
+.contentcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.course {
+    background-color: white;
+    margin: 1rem;
+    width: 28%;
+    border-radius: 2px;
+}
+
+.course img {
+    height: auto;
+    width: 100%;
+}
+
+.course-description {
+    display: block;
+    padding: 1rem;
+}
+
+.course h3 {
+    padding-bottom: 0.5rem;
+}
+
+.course-description p {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: grey;
+}
+
+/* Thesis Section */
+.thesis-container {
+    display: flex;
+}
+
+.thesis-section h1 {
+    display: block;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.thesis-section .container-left {
+    padding: 0 1.5rem 2rem 1.5rem;
+}
+
+.thesis-section .container-left h2 {
+    padding-top: 1.5rem;
+    font-weight: 500;
+}
+
+.thesis-container p {
+    margin-top: 1rem;
+}
+
+.fisma p {
+    line-height: 24px;
+}
+
+.thesis-section .container-right {
+    margin-right: 1%;
+    height: 70%;
+    border: none;
+}
+
+.thesis-section .container-right img {
+    width: 35%;
+    height: auto;
+}
+
+.thesis-section .article {
+    border: none;
+    padding: 2rem;
+}
+
+.thesis-section .article h3 {
+    margin-top: 0;
+    padding-bottom: 0.5rem;
+}
+
+.thesis-section .article p {
+    padding-top: 0;
+}
+/* Footer */
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 1.5rem 2rem 1.5rem;
+    border-top: solid 1px lightgrey;
+}
+
+footer ul li {
+    display: inline-flex;
+    padding-left: 1rem;
+}
+
+/* Mobile */
+@media only screen and (max-width: 768px) {
+
+}
