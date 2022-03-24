@@ -177,6 +177,7 @@ h1 {
 .information .container-right img {
     width: 35%;
     height: auto;
+    object-fit: contain;
 }
 
 .description {
@@ -288,11 +289,8 @@ h3 {
 
 .thesis-section .container-left h2 {
     padding-top: 1.5rem;
+    padding-bottom: 1rem;
     font-weight: 500;
-}
-
-.thesis-container p {
-    margin-top: 1rem;
 }
 
 .thesis-section .container-right {
@@ -335,6 +333,26 @@ footer ul li {
 
 /* Tablet Responsive Design */
 @media only screen and (max-width: 1024px) {
+    .information .article {
+        padding: 0 1rem;
+        margin: 0;
+    }
+
+    .thesis-section .article {
+        padding-top: 1rem;
+    }
+
+    .description p {
+        padding-top: 0.5rem;
+    }
+
+    .credit {
+        padding-bottom: 0;
+    }
+
+    .thesis-section .container-right {
+        padding: 0;
+    }
 }
 
 /* Mobile */
